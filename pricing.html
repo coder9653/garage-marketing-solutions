@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | Garage Marketing Solutions</title>
+    <meta name="description" content="Transparent pricing for garage marketing services. SEO, Google Ads, GMB optimization, and website development packages for auto businesses.">
+    <meta name="keywords" content="garage marketing pricing, SEO cost for auto shops, Google Ads pricing, GMB optimization cost">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/NgmRX16z/logo-removebg-preview.png">
+    
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-red: #d10000;
+            --primary-black: #111111;
+            --secondary-black: #1a1a1a;
+            --accent-gray: #2a2a2a;
+            --text-white: #ffffff;
+            --text-light: #f0f0f0;
+            --text-gray: #cccccc;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            --transition: all 0.3s ease;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text-white);
+            background-color: var(--primary-black);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-red);
+            color: var(--text-white);
+            padding: 12px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .btn:hover {
+            background-color: #b00000;
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--primary-red);
+            color: var(--primary-red);
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--primary-red);
+            color: var(--text-white);
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            display: inline-block;
+            position: relative;
+            color: var(--text-white);
+        }
+        
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 70px;
+            height: 4px;
+            background-color: var(--primary-red);
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: rgba(17, 17, 17, 0.95);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+        
+        header.scrolled {
+            background-color: rgba(17, 17, 17, 0.98);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            z-index: 1001;
+        }
+        
+        .logo img {
+            height: 90px;
+            width: auto;
+        }
+        
+        .logo-text {
+            margin-left: 10px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--text-white);
+        }
+        
+        .logo-text span {
+            color: var(--primary-red);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+        }
+        
+        nav ul li a {
+            color: var(--text-white);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: var(--transition);
+            position: relative;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary-red);
+        }
+        
+        nav ul li a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-red);
+            left: 0;
+            bottom: -5px;
+            transition: var(--transition);
+        }
+        
+        nav ul li a:hover:after {
+            width: 100%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-white);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(rgba(17, 17, 17, 0.9), rgba(17, 17, 17, 0.9)), url('https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 150px 0 80px;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--text-white);
+        }
+        
+        .page-header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: var(--text-light);
+        }
+        
+        /* Pricing Section */
+        .pricing {
+            background-color: var(--secondary-black);
+        }
+        
+        .pricing-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .pricing-tab {
+            background-color: var(--accent-gray);
+            border: none;
+            color: var(--text-white);
+            padding: 12px 25px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            transition: var(--transition);
+        }
+        
+        .pricing-tab.active {
+            background-color: var(--primary-red);
+        }
+        
+        .pricing-tab:hover:not(.active) {
+            background-color: rgba(209, 0, 0, 0.2);
+        }
+        
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .pricing-card {
+            background-color: var(--accent-gray);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: var(--transition);
+            position: relative;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow);
+        }
+        
+        .pricing-card.popular {
+            border: 2px solid var(--primary-red);
+            transform: scale(1.05);
+        }
+        
+        .pricing-card.popular:hover {
+            transform: scale(1.05) translateY(-10px);
+        }
+        
+        .popular-badge {
+            position: absolute;
+            top: 0;
+            right: 20px;
+            background-color: var(--primary-red);
+            color: var(--text-white);
+            padding: 8px 20px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .pricing-header {
+            padding: 40px 30px 30px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .pricing-header h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--text-white);
+        }
+        
+        .price {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary-red);
+            margin-bottom: 5px;
+        }
+        
+        .price span {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--text-gray);
+        }
+        
+        .pricing-header p {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+        
+        .pricing-features {
+            padding: 30px;
+        }
+        
+        .pricing-features ul {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        
+        .pricing-features ul li {
+            margin-bottom: 15px;
+            color: var(--text-light);
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .pricing-features ul li i {
+            color: var(--primary-red);
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+        
+        .pricing-features ul li.disabled {
+            color: var(--text-gray);
+            opacity: 0.6;
+        }
+        
+        .pricing-features ul li.disabled i {
+            color: var(--text-gray);
+        }
+        
+        .pricing-button {
+            text-align: center;
+            padding: 0 30px 30px;
+        }
+        
+        /* Custom Solutions */
+        .custom-solutions {
+            background-color: var(--primary-black);
+        }
+        
+        .custom-box {
+            background: linear-gradient(135deg, var(--accent-gray), #333);
+            border-radius: 10px;
+            padding: 50px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        
+        .custom-box h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: var(--text-white);
+        }
+        
+        .custom-box h2 span {
+            color: var(--primary-red);
+        }
+        
+        .custom-box p {
+            color: var(--text-gray);
+            max-width: 700px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+        }
+        
+        /* Guarantee Section */
+        .guarantee {
+            background-color: var(--secondary-black);
+        }
+        
+        .guarantee-box {
+            background-color: rgba(209, 0, 0, 0.1);
+            border-left: 5px solid var(--primary-red);
+            padding: 40px;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .guarantee-box h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: var(--text-white);
+        }
+        
+        .guarantee-box p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+        
+        /* FAQ Section */
+        .faq {
+            background-color: var(--primary-black);
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            background-color: var(--accent-gray);
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+        
+        .faq-question:hover {
+            background-color: rgba(209, 0, 0, 0.1);
+        }
+        
+        .faq-question h3 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        
+        .faq-toggle {
+            color: var(--primary-red);
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        
+        .faq-answer p {
+            padding: 20px 0;
+            color: var(--text-gray);
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+        
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(to right, var(--primary-black), var(--secondary-black));
+            text-align: center;
+        }
+        
+        .cta-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta-content p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            color: var(--text-gray);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--secondary-black);
+            padding: 70px 0 30px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .footer-logo {
+            margin-bottom: 20px;
+        }
+        
+        .footer-logo img {
+            height: 190px;
+            width: auto;
+        }
+        
+        .footer-logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 1.8rem;
+            color: var(--text-white);
+            margin-top: 10px;
+        }
+        
+        .footer-logo-text span {
+            color: var(--primary-red);
+        }
+        
+        .footer-about p {
+            color: var(--text-gray);
+            margin-bottom: 20px;
+        }
+        
+        .footer-heading {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-heading:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background-color: var(--primary-red);
+            bottom: 0;
+            left: 0;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links ul li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links ul li a {
+            color: var(--text-gray);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-links ul li a:hover {
+            color: var(--primary-red);
+            padding-left: 5px;
+        }
+        
+        .footer-contact p {
+            color: var(--text-gray);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer-contact i {
+            margin-right: 10px;
+            color: var(--primary-red);
+            width: 20px;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+            text-align: center;
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        
+        .fade-in.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 992px) {
+            .page-header h1 {
+                font-size: 2.8rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2.2rem;
+            }
+            
+            .pricing-card.popular {
+                transform: scale(1);
+            }
+            
+            .pricing-card.popular:hover {
+                transform: translateY(-10px);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 15px 20px;
+            }
+            
+            nav {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 400px;
+                height: 100vh;
+                background-color: var(--primary-black);
+                padding: 100px 30px 30px;
+                transition: var(--transition);
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+                z-index: 1000;
+            }
+            
+            nav.active {
+                right: 0;
+            }
+            
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav ul li {
+                margin: 0 0 25px 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+                z-index: 1001;
+            }
+            
+            .page-header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .pricing-cards {
+                grid-template-columns: 1fr;
+            }
+            
+            .custom-box {
+                padding: 30px 20px;
+            }
+            
+            .guarantee-box {
+                padding: 30px 20px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .page-header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+            
+            .pricing-tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .pricing-tab {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="https://i.ibb.co/NgmRX16z/logo-removebg-preview.png" alt="Garage Marketing Solutions Logo">
+                <div class="logo-text">GARAGE <span>MARKETING SOLUTIONS</span></div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html" class="active">Pricing</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="btn">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Transparent Pricing</h1>
+            <p>Simple, straightforward pricing for garage marketing services. No hidden fees, no long-term contracts.</p>
+        </div>
+    </section>
+
+    <!-- Pricing Tabs -->
+    <section class="pricing">
+        <div class="container">
+            <div class="section-title">
+                <h2>Choose Your Plan</h2>
+                <p>All plans include our 3-month performance guarantee</p>
+            </div>
+            
+            <div class="pricing-tabs">
+                <button class="pricing-tab active" data-tab="monthly">Monthly Plans</button>
+                <button class="pricing-tab" data-tab="quarterly">Quarterly (Save 10%)</button>
+                <button class="pricing-tab" data-tab="annual">Annual (Save 20%)</button>
+            </div>
+            
+            <div class="pricing-cards" id="pricingMonthly">
+                <!-- Starter Plan -->
+                <div class="pricing-card fade-in">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="price">£499<span>/month</span></div>
+                        <p>Perfect for small garages just getting started</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Google Business Profile Optimization</li>
+                            <li><i class="fas fa-check-circle"></i> Basic SEO Setup</li>
+                            <li><i class="fas fa-check-circle"></i> Monthly Performance Report</li>
+                            <li><i class="fas fa-check-circle"></i> Up to 5 Service Pages</li>
+                            <li><i class="fas fa-check-circle"></i> 2 Blog Posts/Month</li>
+                            <li class="disabled"><i class="fas fa-times-circle"></i> Google Ads Management</li>
+                            <li class="disabled"><i class="fas fa-times-circle"></i> Advanced SEO Strategy</li>
+                            <li class="disabled"><i class="fas fa-times-circle"></i> Dedicated Account Manager</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-button">
+                        <a href="contact.html?plan=starter" class="btn">Get Started</a>
+                    </div>
+                </div>
+                
+                <!-- Growth Plan (Most Popular) -->
+                <div class="pricing-card popular fade-in">
+                    <div class="popular-badge">MOST POPULAR</div>
+                    <div class="pricing-header">
+                        <h3>Growth</h3>
+                        <div class="price">£899<span>/month</span></div>
+                        <p>Best for established garages wanting more bookings</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Everything in Starter</li>
+                            <li><i class="fas fa-check-circle"></i> Google Ads Management (£500 ad spend)</li>
+                            <li><i class="fas fa-check-circle"></i> Advanced SEO Strategy</li>
+                            <li><i class="fas fa-check-circle"></i> Dedicated Account Manager</li>
+                            <li><i class="fas fa-check-circle"></i> Weekly Campaign Optimization</li>
+                            <li><i class="fas fa-check-circle"></i> Competitor Analysis</li>
+                            <li><i class="fas fa-check-circle"></i> Monthly Strategy Call</li>
+                            <li><i class="fas fa-check-circle"></i> Up to 15 Service Pages</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-button">
+                        <a href="contact.html?plan=growth" class="btn">Get Started</a>
+                    </div>
+                </div>
+                
+                <!-- Premium Plan -->
+                <div class="pricing-card fade-in">
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <div class="price">£1,499<span>/month</span></div>
+                        <p>For multi-location or high-growth garages</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Everything in Growth</li>
+                            <li><i class="fas fa-check-circle"></i> Google Ads Management (£1,000 ad spend)</li>
+                            <li><i class="fas fa-check-circle"></i> Comprehensive SEO Strategy</li>
+                            <li><i class="fas fa-check-circle"></i> Weekly Strategy Calls</li>
+                            <li><i class="fas fa-check-circle"></i> Competitor Monitoring</li>
+                            <li><i class="fas fa-check-circle"></i> Advanced Analytics & Reporting</li>
+                            <li><i class="fas fa-check-circle"></i> Custom Website Development</li>
+                            <li><i class="fas fa-check-circle"></i> Unlimited Service Pages</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-button">
+                        <a href="contact.html?plan=premium" class="btn">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quarterly Pricing (Hidden by default) -->
+            <div class="pricing-cards" id="pricingQuarterly" style="display: none;">
+                <!-- Quarterly plans would go here with 10% discount -->
+                <div class="pricing-card fade-in">
+                    <div class="pricing-header">
+                        <h3>Starter Quarterly</h3>
+                        <div class="price">£1,347<span>/quarter</span></div>
+                        <p>Save 10% paying quarterly</p>
+                    </div>
+                    <div class="pricing-button">
+                        <a href="contact.html?plan=starter-quarterly" class="btn">Get Started</a>
+                    </div>
+                </div>
+                <!-- Similar for other plans -->
+            </div>
+            
+            <!-- Annual Pricing (Hidden by default) -->
+            <div class="pricing-cards" id="pricingAnnual" style="display: none;">
+                <!-- Annual plans would go here with 20% discount -->
+                <div class="pricing-card fade-in">
+                    <div class="pricing-header">
+                        <h3>Starter Annual</h3>
+                        <div class="price">£4,790<span>/year</span></div>
+                        <p>Save 20% paying annually</p>
+                    </div>
+                    <div class="pricing-button">
+                        <a href="contact.html?plan=starter-annual" class="btn">Get Started</a>
+                    </div>
+                </div>
+                <!-- Similar for other plans -->
+            </div>
+            
+            <div class="text-center fade-in">
+                <p style="color: var(--text-gray); margin-bottom: 30px;">All prices exclude VAT. Ad spend billed separately at cost.</p>
+                <a href="contact.html" class="btn btn-outline">Need a Custom Plan?</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Solutions -->
+    <section class="custom-solutions">
+        <div class="container">
+            <div class="custom-box fade-in">
+                <h2>Need a <span>Custom Solution</span>?</h2>
+                <p>We understand that every garage is unique. If you have specific requirements or need a customized package, we can create a tailored solution that fits your exact needs and budget.</p>
+                <a href="contact.html" class="btn">Request Custom Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="guarantee">
+        <div class="container">
+            <div class="guarantee-box fade-in">
+                <h2>Our 3-Month Performance Guarantee</h2>
+                <p>We're so confident in our ability to deliver results that we offer a 3-month performance guarantee. If we don't deliver the agreed-upon number of bookings within the first 3 months, you don't pay for that period.</p>
+                <p>No other garage marketing agency in the UK offers this level of confidence in their services.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pricing FAQs</h2>
+                <p>Common questions about our pricing and services</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <h3>Is there a setup fee?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, there's a one-time setup fee of £299 for the Starter plan, £499 for the Growth plan, and £799 for the Premium plan. This covers initial strategy development, account setup, and campaign creation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <h3>How is ad spend handled?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ad spend is billed separately at cost. For example, if your plan includes £500 in ad spend, we'll add £500 to your monthly invoice. We never markup ad spend - you pay exactly what Google charges.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <h3>Can I cancel anytime?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>After our 3-month guarantee period, all plans are month-to-month with a 30-day cancellation notice. There are no long-term contracts or cancellation fees.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <h3>Do you offer discounts for multiple locations?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! If you have multiple garage locations, we offer volume discounts. Contact us for a custom quote based on the number of locations and services needed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content fade-in">
+                <h2>Ready to Get More Bookings?</h2>
+                <p>Book a free strategy call with our garage marketing experts. We'll analyze your current situation and recommend the best plan for your business.</p>
+                <a href="contact.html" class="btn">Book Free Strategy Call</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="https://i.ibb.co/NgmRX16z/logo-removebg-preview.png" alt="Garage Marketing Solutions Logo">
+<!-- <div class="footer-logo-text">GARAGE<span>MARKETING</span></div> -->
+                    </div> 
+                    <p>UK's leading digital marketing agency specializing in SEO, Google Ads, GMB optimization, and website development for auto garages, tyre shops, and towing businesses.</p>
+                    <div class="social-links">
+                        <a href="#" style="color: var(--text-white); margin-right: 15px; font-size: 1.2rem;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: var(--text-white); margin-right: 15px; font-size: 1.2rem;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color: var(--text-white); margin-right: 15px; font-size: 1.2rem;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="color: var(--text-white); font-size: 1.2rem;"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-heading">Services</h3>
+                    <ul>
+                        <li><a href="services.html#seo">SEO for Garages</a></li>
+                        <li><a href="services.html#ppc">Google Ads (PPC)</a></li>
+                        <li><a href="services.html#gmb">GMB Optimization</a></li>
+                        <li><a href="services.html#webdev">Website Development</a></li>
+                        <li><a href="services.html">All Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> London, United Kingdom</p>
+                    <p><i class="fas fa-phone-alt"></i> 0121 285 8490</p>
+                    <p><i class="fas fa-envelope"></i> info@garagemarketingsolutions.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri: 9am-6pm</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Garage Marketing Solutions. All rights reserved. | <a href="privacy.html" style="color: var(--text-gray);">Privacy Policy</a> | <a href="terms.html" style="color: var(--text-gray);">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mainNav = document.getElementById('mainNav');
+        const header = document.getElementById('header');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            mobileMenuBtn.innerHTML = mainNav.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mainNav a').forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Pricing Tabs
+        document.querySelectorAll('.pricing-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                document.querySelectorAll('.pricing-tab').forEach(t => {
+                    t.classList.remove('active');
+                });
+                
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Hide all pricing cards
+                document.getElementById('pricingMonthly').style.display = 'none';
+                document.getElementById('pricingQuarterly').style.display = 'none';
+                document.getElementById('pricingAnnual').style.display = 'none';
+                
+                // Show selected pricing cards
+                const tabType = tab.getAttribute('data-tab');
+                if (tabType === 'monthly') {
+                    document.getElementById('pricingMonthly').style.display = 'grid';
+                } else if (tabType === 'quarterly') {
+                    document.getElementById('pricingQuarterly').style.display = 'grid';
+                } else if (tabType === 'annual') {
+                    document.getElementById('pricingAnnual').style.display = 'grid';
+                }
+            });
+        });
+        
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+                
+                const toggle = question.querySelector('.faq-toggle');
+                toggle.textContent = item.classList.contains('active') ? '−' : '+';
+            });
+        });
+        
+        // Fade-in animation on scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const fadeInOnScroll = () => {
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        };
+        
+        // Set initial state for fade elements
+        fadeElements.forEach(element => {
+            element.classList.remove('active');
+        });
+        
+        // Check on load and scroll
+        window.addEventListener('load', fadeInOnScroll);
+        window.addEventListener('scroll', fadeInOnScroll);
+        
+        // Initial check
+        fadeInOnScroll();
+    </script>
+</body>
+</html>
