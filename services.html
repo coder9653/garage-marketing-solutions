@@ -1,1010 +1,1046 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services | Garage Marketing Solutions</title>
-    <meta name="description" content="Specialized digital marketing services for auto garages: SEO, Google Ads, GMB optimization, and website development. Get more bookings for your garage.">
-    <meta name="keywords" content="garage SEO, Google Ads for auto shops, GMB optimization, garage website development, digital marketing for mechanics">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/NgmRX16z/logo-removebg-preview.png">
-    
+    <meta name="description"
+        content="Professional digital marketing services for garages: SEO, Google Ads, GMB optimization, and web development. Proven strategies to grow your automotive business.">
+    <title>Our Services | Garage Marketing Solutions UK</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://i.ibb.co/NgmRX16z/logo-removebg-preview.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://i.ibb.co/NgmRX16z/logo-removebg-preview.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://i.ibb.co/NgmRX16z/logo-removebg-preview.png">
+    <link rel="shortcut icon" href="https://i.ibb.co/NgmRX16z/logo-removebg-preview.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <style>
-        /* Reset and Base Styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         :root {
-            --primary-red: #d10000;
-            --primary-black: #111111;
-            --secondary-black: #1a1a1a;
-            --accent-gray: #2a2a2a;
-            --text-white: #ffffff;
-            --text-light: #f0f0f0;
-            --text-gray: #cccccc;
-            --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            --transition: all 0.3s ease;
+            --primary-red: #DC143C;
+            --dark-red: #B01030;
+            --black: #0a0a0a;
+            --dark-gray: #1a1a1a;
+            --light-gray: #2a2a2a;
+            --white: #ffffff;
+            --text-gray: #b0b0b0;
         }
-        
+
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--black);
+            color: var(--white);
             line-height: 1.6;
-            color: var(--text-white);
-            background-color: var(--primary-black);
             overflow-x: hidden;
         }
-        
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 1rem;
-        }
-        
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        .btn {
-            display: inline-block;
-            background-color: var(--primary-red);
-            color: var(--text-white);
-            padding: 12px 30px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border: none;
-            cursor: pointer;
-            transition: var(--transition);
-            font-family: 'Montserrat', sans-serif;
-        }
-        
-        .btn:hover {
-            background-color: #b00000;
-            transform: translateY(-3px);
-            box-shadow: var(--shadow);
-        }
-        
-        .btn-outline {
-            background-color: transparent;
-            border: 2px solid var(--primary-red);
-            color: var(--primary-red);
-        }
-        
-        .btn-outline:hover {
-            background-color: var(--primary-red);
-            color: var(--text-white);
-        }
-        
-        section {
-            padding: 80px 0;
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 60px;
-            position: relative;
-        }
-        
-        .section-title h2 {
-            font-size: 2.5rem;
-            display: inline-block;
-            position: relative;
-            color: var(--text-white);
-        }
-        
-        .section-title h2:after {
-            content: '';
-            position: absolute;
-            width: 70px;
-            height: 4px;
-            background-color: var(--primary-red);
-            bottom: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        
-        .text-center {
-            text-align: center;
-        }
-        
-        /* Header Styles */
+
         header {
-            background-color: rgba(17, 17, 17, 0.95);
             position: fixed;
-            width: 100%;
             top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
             z-index: 1000;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: var(--transition);
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(220, 20, 60, 0.3);
         }
-        
-        header.scrolled {
-            background-color: rgba(17, 17, 17, 0.98);
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-        }
-        
-        .header-container {
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 20px;
+            padding: 0 2rem;
         }
-        
+
         .logo {
             display: flex;
             align-items: center;
-            z-index: 1001;
+            text-decoration: none;
         }
-        
+
         .logo img {
-            height: 90px;
+            height: 60px;
             width: auto;
+            transition: transform 0.3s ease;
         }
-        
-        .logo-text {
-            margin-left: 10px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 800;
-            font-size: 1.5rem;
-            color: var(--text-white);
+
+        .logo:hover img {
+            transform: scale(1.05);
         }
-        
-        .logo-text span {
-            color: var(--primary-red);
-        }
-        
-        nav ul {
+
+        .nav-links {
             display: flex;
             list-style: none;
+            gap: 2rem;
+            align-items: center;
         }
-        
-        nav ul li {
-            margin-left: 30px;
-        }
-        
-        nav ul li a {
-            color: var(--text-white);
+
+        .nav-links a {
+            color: var(--white);
             text-decoration: none;
             font-weight: 500;
-            font-size: 1rem;
-            transition: var(--transition);
+            transition: color 0.3s ease;
             position: relative;
         }
-        
-        nav ul li a:hover {
-            color: var(--primary-red);
-        }
-        
-        nav ul li a:after {
+
+        .nav-links a::after {
             content: '';
             position: absolute;
+            bottom: -5px;
+            left: 0;
             width: 0;
             height: 2px;
-            background-color: var(--primary-red);
-            left: 0;
-            bottom: -5px;
-            transition: var(--transition);
+            background: var(--primary-red);
+            transition: width 0.3s ease;
         }
-        
-        nav ul li a:hover:after {
+
+        .nav-links a:hover::after {
             width: 100%;
         }
-        
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            color: var(--text-white);
-            font-size: 1.5rem;
-            cursor: pointer;
+
+        .nav-links a:hover {
+            color: var(--primary-red);
         }
-        
-        /* Page Header */
-        .page-header {
-            background: linear-gradient(rgba(17, 17, 17, 0.9), rgba(17, 17, 17, 0.9)), url('https://images.unsplash.com/photo-1549399542-7e3f8b79c341?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-            padding: 150px 0 80px;
-            text-align: center;
+
+        .dropdown {
+            position: relative;
         }
-        
-        .page-header h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            color: var(--text-white);
+
+        .dropdown-content {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: var(--dark-gray);
+            min-width: 220px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            border-radius: 8px;
+            margin-top: 1rem;
+            border: 1px solid rgba(220, 20, 60, 0.3);
         }
-        
-        .page-header p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto;
-            color: var(--text-light);
+
+        .dropdown:hover .dropdown-content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
         }
-        
-        /* Service Detail Section */
-        .service-detail {
-            padding: 60px 0;
+
+        .dropdown-content a {
+            display: block;
+            padding: 0.8rem 1.5rem;
+            color: var(--white);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
-        
-        .service-detail:last-child {
+
+        .dropdown-content a:last-child {
             border-bottom: none;
         }
-        
-        .service-row {
+
+        .dropdown-content a:hover {
+            background: var(--primary-red);
+        }
+
+        .cta-button {
+            background: var(--primary-red);
+            color: var(--white);
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(220, 20, 60, 0.3);
+        }
+
+        .cta-button:hover {
+            background: var(--dark-red);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(220, 20, 60, 0.5);
+        }
+
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+        }
+
+        .mobile-menu span {
+            width: 25px;
+            height: 3px;
+            background: var(--white);
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .mobile-menu.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        .page-hero {
+            min-height: 60vh;
             display: flex;
             align-items: center;
-            gap: 50px;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--black) 0%, var(--dark-gray) 100%);
+            text-align: center;
+            padding: 140px 2rem 4rem;
+            margin-top: 80px;
+            position: relative;
+            overflow: hidden;
         }
-        
-        .service-row.reverse {
-            flex-direction: row-reverse;
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(220, 20, 60, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            top: -200px;
+            right: -100px;
+            animation: pulse 4s ease-in-out infinite;
         }
-        
-        .service-image {
-            flex: 1;
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 0.8;
+            }
         }
-        
-        .service-image img {
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: var(--shadow);
+
+        .page-hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
         }
-        
-        .service-content {
-            flex: 1;
+
+        .page-hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
         }
-        
-        .service-content h2 {
-            font-size: 2.2rem;
-            margin-bottom: 20px;
-            color: var(--text-white);
-        }
-        
-        .service-content h2 span {
+
+        .page-hero h1 span {
             color: var(--primary-red);
         }
-        
-        .service-content p {
+
+        .page-hero p {
+            font-size: 1.2rem;
             color: var(--text-gray);
-            margin-bottom: 25px;
-            font-size: 1.1rem;
+            margin-bottom: 2rem;
         }
-        
+
+        .service-detail {
+            padding: 6rem 2rem;
+            background: var(--dark-gray);
+        }
+
+        .service-detail:nth-child(even) {
+            background: var(--black);
+        }
+
+        .service-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .service-content.reverse {
+            direction: rtl;
+        }
+
+        .service-content.reverse>* {
+            direction: ltr;
+        }
+
+        .service-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--white);
+        }
+
+        .service-text h2 span {
+            color: var(--primary-red);
+        }
+
+        .service-text p {
+            color: var(--text-gray);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
         .service-features {
             list-style: none;
-            margin-bottom: 30px;
+            margin-bottom: 2rem;
         }
-        
+
         .service-features li {
-            margin-bottom: 15px;
-            color: var(--text-light);
-            display: flex;
-            align-items: flex-start;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background: var(--light-gray);
+            border-left: 4px solid var(--primary-red);
+            border-radius: 8px;
+            transition: all 0.3s ease;
         }
-        
-        .service-features li i {
-            color: var(--primary-red);
-            margin-right: 10px;
-            margin-top: 5px;
+
+        .service-features li:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 20px rgba(220, 20, 60, 0.3);
         }
-        
-        /* Process Section */
-        .process {
-            background-color: var(--secondary-black);
+
+        .service-features strong {
+            color: var(--white);
+            display: block;
+            margin-bottom: 0.5rem;
         }
-        
-        .process-steps {
+
+        .service-results {
+            background: var(--primary-red);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .service-results h3 {
+            margin-bottom: 1rem;
+        }
+
+        .results-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 1rem;
         }
-        
-        .step {
-            background-color: var(--accent-gray);
-            padding: 40px 30px;
-            border-radius: 10px;
+
+        .result-item {
             text-align: center;
+        }
+
+        .result-number {
+            font-size: 2rem;
+            font-weight: 800;
+            display: block;
+        }
+
+        .result-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .service-image-container {
             position: relative;
-            transition: var(--transition);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            border: 2px solid var(--primary-red);
         }
-        
-        .step:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow);
+
+        .service-image-container img {
+            width: 100%;
+            display: block;
+            transition: transform 0.3s ease;
         }
-        
-        .step-number {
-            position: absolute;
-            top: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: var(--primary-red);
-            color: var(--text-white);
+
+        .service-image-container:hover img {
+            transform: scale(1.05);
+        }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--primary-red);
+            color: var(--white);
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(220, 20, 60, 0.4);
+        }
+
+        .btn-primary:hover {
+            background: var(--dark-red);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(220, 20, 60, 0.6);
+        }
+
+        footer {
+            background: var(--dark-gray);
+            padding: 4rem 2rem 2rem;
+            border-top: 1px solid rgba(220, 20, 60, 0.3);
+        }
+
+        .footer-logo {
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-logo img {
+            height: 80px;
+            width: auto;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-column h3 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .footer-column p {
+            color: var(--text-gray);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: var(--text-gray);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-red);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--text-gray);
+        }
+
+        .contact-icon {
             width: 40px;
             height: 40px;
+            background: var(--primary-red);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--light-gray);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: 700;
-            font-size: 1.2rem;
-        }
-        
-        .step-icon {
-            font-size: 2.5rem;
-            color: var(--primary-red);
-            margin-bottom: 20px;
-        }
-        
-        .step h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-        }
-        
-        .step p {
-            color: var(--text-gray);
-        }
-        
-        /* FAQ Section */
-        .faq {
-            background-color: var(--primary-black);
-        }
-        
-        .faq-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .faq-item {
-            margin-bottom: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        
-        .faq-question {
-            background-color: var(--accent-gray);
-            padding: 20px;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: var(--transition);
-        }
-        
-        .faq-question:hover {
-            background-color: rgba(209, 0, 0, 0.1);
-        }
-        
-        .faq-question h3 {
-            margin: 0;
-            font-size: 1.2rem;
-        }
-        
-        .faq-toggle {
-            color: var(--primary-red);
-            font-size: 1.2rem;
-            transition: var(--transition);
-        }
-        
-        .faq-answer {
-            padding: 0 20px;
-            max-height: 0;
-            overflow: hidden;
-            transition: var(--transition);
-        }
-        
-        .faq-answer p {
-            padding: 20px 0;
-            color: var(--text-gray);
-        }
-        
-        .faq-item.active .faq-answer {
-            max-height: 500px;
-        }
-        
-        .faq-item.active .faq-toggle {
-            transform: rotate(45deg);
-        }
-        
-        /* CTA Section */
-        .cta-section {
-            background: linear-gradient(to right, var(--primary-black), var(--secondary-black));
-            text-align: center;
-        }
-        
-        .cta-content h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        
-        .cta-content p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto 30px;
-            color: var(--text-gray);
-        }
-        
-        /* Footer */
-        footer {
-            background-color: var(--secondary-black);
-            padding: 70px 0 30px;
-        }
-        
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 50px;
-        }
-        
-        .footer-logo {
-            margin-bottom: 20px;
-        }
-        
-        .footer-logo img {
-            height: 190px;
-            width: auto;
-        }
-        
-        .footer-logo-text {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 800;
-            font-size: 1.8rem;
-            color: var(--text-white);
-            margin-top: 10px;
-        }
-        
-        .footer-logo-text span {
-            color: var(--primary-red);
-        }
-        
-        .footer-about p {
-            color: var(--text-gray);
-            margin-bottom: 20px;
-        }
-        
-        .footer-heading {
-            font-size: 1.3rem;
-            margin-bottom: 25px;
-            position: relative;
-            padding-bottom: 10px;
-        }
-        
-        .footer-heading:after {
-            content: '';
-            position: absolute;
-            width: 40px;
-            height: 3px;
-            background-color: var(--primary-red);
-            bottom: 0;
-            left: 0;
-        }
-        
-        .footer-links ul {
-            list-style: none;
-        }
-        
-        .footer-links ul li {
-            margin-bottom: 12px;
-        }
-        
-        .footer-links ul li a {
-            color: var(--text-gray);
+            color: var(--white);
             text-decoration: none;
-            transition: var(--transition);
+            transition: all 0.3s ease;
         }
-        
-        .footer-links ul li a:hover {
-            color: var(--primary-red);
-            padding-left: 5px;
+
+        .social-icon:hover {
+            background: var(--primary-red);
+            transform: translateY(-3px);
         }
-        
-        .footer-contact p {
-            color: var(--text-gray);
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-        }
-        
-        .footer-contact i {
-            margin-right: 10px;
-            color: var(--primary-red);
-            width: 20px;
-        }
-        
+
         .footer-bottom {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-top: 2rem;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 30px;
             text-align: center;
             color: var(--text-gray);
-            font-size: 0.9rem;
         }
-        
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
         }
-        
-        .fade-in {
+
+        .whatsapp-button {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: #29A71A;
+            color: var(--white);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+        }
+
+        .whatsapp-icon {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 110px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-red);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
             opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s ease, transform 0.8s ease;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+            box-shadow: 0 4px 15px rgba(220, 20, 60, 0.4);
         }
-        
-        .fade-in.active {
+
+        .back-to-top.visible {
             opacity: 1;
-            transform: translateY(0);
+            visibility: visible;
         }
-        
-        /* Mobile Responsive */
-        @media (max-width: 992px) {
-            .page-header h1 {
-                font-size: 2.8rem;
+
+        .back-to-top:hover {
+            background: var(--dark-red);
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 1024px) {
+            .service-content {
+                grid-template-columns: 1fr;
+                text-align: center;
             }
-            
-            .section-title h2 {
-                font-size: 2.2rem;
+
+            .service-content.reverse {
+                direction: ltr;
             }
-            
-            .service-content h2 {
-                font-size: 1.8rem;
+
+            .results-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
             }
         }
-        
+
         @media (max-width: 768px) {
-            .header-container {
-                padding: 15px 20px;
-            }
-            
             nav {
+                padding: 0 1rem;
+            }
+
+            .logo img {
+                height: 50px;
+            }
+
+            .nav-links {
                 position: fixed;
-                top: 0;
+                top: 70px;
                 right: -100%;
                 width: 80%;
-                max-width: 400px;
-                height: 100vh;
-                background-color: var(--primary-black);
-                padding: 100px 30px 30px;
-                transition: var(--transition);
-                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
-                z-index: 1000;
+                max-width: 300px;
+                height: calc(100vh - 70px);
+                background: var(--dark-gray);
+                flex-direction: column;
+                padding: 2rem;
+                transition: right 0.3s ease;
+                border-left: 1px solid rgba(220, 20, 60, 0.3);
+                align-items: flex-start;
+                gap: 1.5rem;
+                overflow-y: auto;
             }
-            
-            nav.active {
+
+            .nav-links.active {
                 right: 0;
             }
-            
-            nav ul {
-                flex-direction: column;
+
+            .mobile-menu {
+                display: flex;
             }
-            
-            nav ul li {
-                margin: 0 0 25px 0;
+
+            .dropdown-content {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                margin-top: 0.5rem;
+                margin-left: 1rem;
+                box-shadow: none;
             }
-            
-            .mobile-menu-btn {
-                display: block;
-                z-index: 1001;
+
+            .page-hero h1 {
+                font-size: 2rem;
             }
-            
-            .service-row, .service-row.reverse {
-                flex-direction: column;
-                gap: 30px;
+
+            .service-text h2 {
+                font-size: 2rem;
             }
-            
-            .page-header h1 {
-                font-size: 2.5rem;
-            }
-            
-            .process-steps {
+
+            .footer-content {
                 grid-template-columns: 1fr;
             }
-        }
-        
-        @media (max-width: 576px) {
-            .page-header h1 {
-                font-size: 2.2rem;
+
+            .whatsapp-button span {
+                display: none;
             }
-            
-            .section-title h2 {
-                font-size: 1.8rem;
+
+            .whatsapp-float {
+                bottom: 20px;
+                right: 20px;
             }
-            
-            .service-content h2 {
-                font-size: 1.6rem;
-            }
-            
-            .footer-grid {
-                grid-template-columns: 1fr;
+
+            .back-to-top {
+                bottom: 90px;
+                right: 20px;
             }
         }
     </style>
 </head>
+
 <body>
-    <!-- Header -->
     <header id="header">
-        <div class="container header-container">
-            <div class="logo">
-                <img src="https://i.ibb.co/NgmRX16z/logo-removebg-preview.png" alt="Garage Marketing Solutions Logo">
-                <div class="logo-text">GARAGE <span>MARKETING SOLUTIONS</span></div>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="https://i.ibb.co/NgmRX16z/logo-removebg-preview.png" alt="Garage Marketing Solutions">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="services.html">Services ▾</a>
+                    <div class="dropdown-content">
+                        <a href="#seo">SEO Services</a>
+                        <a href="#google-ads">Google Ads (PPC)</a>
+                        <a href="#gmb">GMB Optimization</a>
+                        <a href="#web-dev">Website Development</a>
+                    </div>
+                </li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="cta-button">Get Free Quote</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
-            
-            <nav id="mainNav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html" class="active">Services</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html" class="btn">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        </nav>
     </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1>Our Marketing Services</h1>
-            <p>Specialized digital marketing solutions designed specifically for auto garages, tyre shops, and towing businesses in the UK.</p>
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Our <span>Marketing Services</span></h1>
+            <p>Comprehensive digital marketing solutions tailored specifically for UK garages, MOT centres, and tyre
+                shops. Drive more bookings with our proven strategies.</p>
         </div>
     </section>
 
     <!-- SEO Service -->
     <section class="service-detail" id="seo">
-        <div class="container">
-            <div class="service-row fade-in">
-                <div class="service-image">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="SEO for auto garages">
+        <div class="service-content">
+            <div class="service-text">
+                <h2>Search Engine <span>Optimization (SEO)</span></h2>
+                <p>Dominate local search results and get found by customers searching for "MOT near me", "car
+                    servicing", and "tyre fitting" in your area. Our SEO strategies are specifically designed for the
+                    automotive industry.</p>
+
+                <ul class="service-features">
+                    <li>
+                        <strong>Local SEO Optimization</strong>
+                        Target customers in your specific area with location-based keywords and local search strategies.
+                    </li>
+                    <li>
+                        <strong>Content Marketing</strong>
+                        Engaging blog posts and service pages that rank well and convert visitors into customers.
+                    </li>
+                    <li>
+                        <strong>Link Building</strong>
+                        Quality backlinks from automotive directories and local business listings.
+                    </li>
+                    <li>
+                        <strong>Technical SEO Audit</strong>
+                        Comprehensive site analysis and optimization for maximum search visibility.
+                    </li>
+                </ul>
+
+                <div class="service-results">
+                    <h3>Average Results for Our Garage Clients:</h3>
+                    <div class="results-grid">
+                        <div class="result-item">
+                            <span class="result-number">300%</span>
+                            <span class="result-label">Traffic Increase</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-number">#1-3</span>
+                            <span class="result-label">Rankings</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-number">6-12</span>
+                            <span class="result-label">Months Results</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-content">
-                    <h2><span>SEO</span> for Auto Garages</h2>
-                    <p>Dominate local search results with our specialized SEO strategies designed specifically for auto repair shops, tyre centers, and towing services. Get found by customers actively searching for your services.</p>
-                    
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> Local SEO optimization for your service area</li>
-                        <li><i class="fas fa-check-circle"></i> Keyword research for garage-specific services</li>
-                        <li><i class="fas fa-check-circle"></i> On-page optimization for service pages</li>
-                        <li><i class="fas fa-check-circle"></i> Technical SEO for faster loading speeds</li>
-                        <li><i class="fas fa-check-circle"></i> Monthly performance reporting</li>
-                    </ul>
-                    
-                    <a href="contact.html" class="btn">Get SEO Quote</a>
-                </div>
+
+                <a href="contact.html" class="btn-primary">Get Started</a>
+            </div>
+            <div class="service-image-container">
+                <img src="https://i.ibb.co/Fb1wVqHq/gsc2.jpg" alt="SEO Results Dashboard">
             </div>
         </div>
     </section>
 
     <!-- Google Ads Service -->
-    <section class="service-detail" id="ppc">
-        <div class="container">
-            <div class="service-row reverse fade-in">
-                <div class="service-image">
-                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Google Ads for garages">
+    <section class="service-detail" id="google-ads">
+        <div class="service-content reverse">
+            <div class="service-text">
+                <h2>Google Ads <span>(PPC)</span> Management</h2>
+                <p>Get instant visibility on Google with targeted paid advertising campaigns. We optimize your ad spend
+                    to bring you quality MOT and servicing leads at the lowest cost per booking.</p>
+
+                <ul class="service-features">
+                    <li>
+                        <strong>Targeted Campaigns</strong>
+                        Reach customers actively searching for garage services in your local area.
+                    </li>
+                    <li>
+                        <strong>Budget Optimization</strong>
+                        Maximize ROI by focusing spend on high-converting keywords and times.
+                    </li>
+                    <li>
+                        <strong>Call Extensions</strong>
+                        Make it easy for customers to call you directly from search results.
+                    </li>
+                    <li>
+                        <strong>Conversion Tracking</strong>
+                        Track every lead and booking to measure campaign performance accurately.
+                    </li>
+                </ul>
+
+                <div class="service-results">
+                    <h3>Average Results for Our Garage Clients:</h3>
+                    <div class="results-grid">
+                        <div class="result-item">
+                            <span class="result-number">450%</span>
+                            <span class="result-label">ROI Average</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-number">£8.50</span>
+                            <span class="result-label">Cost Per Lead</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-number">Instant</span>
+                            <span class="result-label">Results</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-content">
-                    <h2><span>Google Ads</span> (PPC) Management</h2>
-                    <p>Get immediate visibility with targeted PPC campaigns that put your garage in front of customers actively searching for MOTs, repairs, tyre replacements, and emergency services.</p>
-                    
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> Campaign setup for your specific services</li>
-                        <li><i class="fas fa-check-circle"></i> Geographic targeting for local customers</li>
-                        <li><i class="fas fa-check-circle"></i> Service-specific ad groups (MOT, Tyres, Repairs)</li>
-                        <li><i class="fas fa-check-circle"></i> Conversion tracking for calls and bookings</li>
-                        <li><i class="fas fa-check-circle"></i> Weekly optimization and bid management</li>
-                    </ul>
-                    
-                    <a href="contact.html" class="btn">Get PPC Quote</a>
-                </div>
+
+                <a href="contact.html" class="btn-primary">Get Started</a>
+            </div>
+            <div class="service-image-container">
+                <img src="https://i.ibb.co/gZL4MdS7/g1.png" alt="Google Ads Dashboard">
             </div>
         </div>
     </section>
 
     <!-- GMB Service -->
     <section class="service-detail" id="gmb">
-        <div class="container">
-            <div class="service-row fade-in">
-                <div class="service-image">
-                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="GMB optimization dashboard">
+        <div class="service-content">
+            <div class="service-text">
+                <h2>Google Business <span>Profile Optimization</span></h2>
+                <p>Maximize your Google Business Profile (formerly Google My Business) to dominate local search results
+                    and attract more customers from your area. Essential for any garage wanting to show up on Google
+                    Maps.</p>
+
+                <ul class="service-features">
+                    <li>
+                        <strong>Profile Setup & Optimization</strong>
+                        Complete profile optimization with all relevant business information and categories.
+                    </li>
+                    <li>
+                        <strong>Review Management</strong>
+                        Strategy to get more 5-star reviews and respond professionally to all feedback.
+                    </li>
+                    <li>
+                        <strong>Photo Optimization</strong>
+                        Professional photos of your garage, team, and services to attract more customers.
+                    </li>
+                    <li>
+                        <strong>Posts & Updates</strong>
+                        Regular posts about special offers, MOT promotions, and garage news.
+                    </li>
+                </ul>
+
+                <div class="service-results">
+                    <h3>Average Results for Our Garage Clients:</h3>
+                    <div class="results-grid">
+                        <div class="result-item">
+                            <span class="result-number">250%</span>
+                            <span class="result-label">More Views</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-number">4.7★</span>
+                            <span class="result-label">Avg Rating</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-number">180%</span>
+                            <span class="result-label">More Calls</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-content">
-                    <h2><span>Google Business Profile</span> Optimization</h2>
-                    <p>Optimize your Google Business Profile to attract more calls, directions, and website visits from local customers. Your GBP is often the first impression customers have of your business.</p>
-                    
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> Complete GBP setup and optimization</li>
-                        <li><i class="fas fa-check-circle"></i> Service menu and pricing setup</li>
-                        <li><i class="fas fa-check-circle"></i> Regular posts and updates</li>
-                        <li><i class="fas fa-check-circle"></i> Review management and response</li>
-                        <li><i class="fas fa-check-circle"></i> Photo optimization for services</li>
-                    </ul>
-                    
-                    <a href="contact.html" class="btn">Get GMB Quote</a>
-                </div>
+
+                <a href="contact.html" class="btn-primary">Get Started</a>
+            </div>
+            <div class="service-image-container">
+                <img src="https://i.ibb.co/ZZnGYXm/gmb1.jpg" alt="Google Business Profile">
             </div>
         </div>
     </section>
 
-    <!-- Website Development -->
-    <section class="service-detail" id="webdev">
-        <div class="container">
-            <div class="service-row reverse fade-in">
-                <div class="service-image">
-                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Garage website development">
+    <!-- Web Development Service -->
+    <section class="service-detail" id="web-dev">
+        <div class="service-content reverse">
+            <div class="service-text">
+                <h2>Website <span>Development</span></h2>
+                <p>Modern, mobile-responsive websites designed specifically for garages, MOT centres, and tyre shops.
+                    Built to convert visitors into bookings with fast loading times and SEO optimization.</p>
+
+                <ul class="service-features">
+                    <li>
+                        <strong>Mobile-First Design</strong>
+                        Responsive websites that work perfectly on all devices and screen sizes.
+                    </li>
+                    <li>
+                        <strong>Fast Loading Speed</strong>
+                        Optimized for speed to keep visitors engaged and improve search rankings.
+                    </li>
+                    <li>
+                        <strong>Online Booking System</strong>
+                        Allow customers to book MOTs and services directly from your website.
+                    </li>
+                    <li>
+                        <strong>SEO-Optimized</strong>
+                        Built with SEO best practices to help you rank higher in search results.
+                    </li>
+                </ul>
+
+                <div class="service-results">
+                    <h3>Website Features:</h3>
+                    <div class="results-grid">
+                        <div class="result-item">
+                            <span class="result-number">100%</span>
+                            <span class="result-label">Mobile Friendly</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-number">&lt;2s</span>
+                            <span class="result-label">Load Time</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-number">SSL</span>
+                            <span class="result-label">Secure</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-content">
-                    <h2><span>Website Development</span> for Garages</h2>
-                    <p>Mobile-friendly, fast-loading websites designed to convert visitors into bookings for MOTs, repairs, and services. We build websites that work specifically for automotive businesses.</p>
-                    
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> Mobile-responsive design</li>
-                        <li><i class="fas fa-check-circle"></i> Online booking system integration</li>
-                        <li><i class="fas fa-check-circle"></i> Service pages with clear pricing</li>
-                        <li><i class="fas fa-check-circle"></i> Fast loading speeds for better SEO</li>
-                        <li><i class="fas fa-check-circle"></i> Content management system</li>
-                    </ul>
-                    
-                    <a href="contact.html" class="btn">Get Website Quote</a>
-                </div>
+
+                <a href="contact.html" class="btn-primary">Get Started</a>
+            </div>
+            <div class="service-image-container">
+                <img src="https://i.ibb.co/Bb9D0RK/gmb3.jpg" alt="Website Design">
             </div>
         </div>
     </section>
 
-    <!-- Process Section -->
-    <section class="process">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our 4-Step Process</h2>
-                <p>How we deliver consistent results for automotive businesses</p>
-            </div>
-            
-            <div class="process-steps">
-                <div class="step fade-in">
-                    <div class="step-number">1</div>
-                    <div class="step-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <h3>Discovery & Analysis</h3>
-                    <p>We analyze your current online presence, competition, and target market to create a customized strategy.</p>
-                </div>
-                
-                <div class="step fade-in">
-                    <div class="step-number">2</div>
-                    <div class="step-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3>Strategy & Setup</h3>
-                    <p>We implement our proven marketing systems tailored to your specific services and location.</p>
-                </div>
-                
-                <div class="step fade-in">
-                    <div class="step-number">3</div>
-                    <div class="step-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Optimization</h3>
-                    <p>We continuously monitor and optimize campaigns to improve performance and ROI.</p>
-                </div>
-                
-                <div class="step fade-in">
-                    <div class="step-number">4</div>
-                    <div class="step-icon">
-                        <i class="fas fa-calendar-check"></i>
-                    </div>
-                    <h3>Results & Scaling</h3>
-                    <p>We track bookings and revenue growth, then scale successful strategies to maximize results.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq">
-        <div class="container">
-            <div class="section-title">
-                <h2>Frequently Asked Questions</h2>
-                <p>Common questions about our garage marketing services</p>
-            </div>
-            
-            <div class="faq-container">
-                <div class="faq-item fade-in">
-                    <div class="faq-question">
-                        <h3>How long does it take to see results?</h3>
-                        <div class="faq-toggle">+</div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Google Ads can start generating leads within 24-48 hours of campaign launch. SEO typically takes 3-6 months to show significant results, but we often see improvements within the first month. Our 3-month guarantee ensures you see results or you don't pay.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item fade-in">
-                    <div class="faq-question">
-                        <h3>Do you work with garages outside London?</h3>
-                        <div class="faq-toggle">+</div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Yes! We work with automotive businesses across the UK, including England, Scotland, Wales, and Northern Ireland. Our digital marketing services are location-based, so we can target customers in your specific service area.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item fade-in">
-                    <div class="faq-question">
-                        <h3>What's included in your monthly service?</h3>
-                        <div class="faq-toggle">+</div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Our monthly service includes campaign management, weekly optimizations, performance reporting, and regular strategy calls. We also handle all ad spend management and provide you with transparent reports showing calls, bookings, and ROI.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item fade-in">
-                    <div class="faq-question">
-                        <h3>Can I cancel if I'm not happy with the results?</h3>
-                        <div class="faq-toggle">+</div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We offer a 3-month performance guarantee. If we don't deliver the agreed-upon results within 3 months, you don't pay. After the guarantee period, we work on a month-to-month basis with a 30-day cancellation notice.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content fade-in">
-                <h2>Ready to Get More Bookings?</h2>
-                <p>Book a free strategy call with our garage marketing experts. We'll analyze your current situation and show you exactly how we can help you get more customers.</p>
-                <a href="contact.html" class="btn">Book Free Strategy Call</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <div class="footer-logo">
-                        <img src="https://i.ibb.co/NgmRX16z/logo-removebg-preview.png" alt="Garage Marketing Solutions Logo">
-                        <!-- <div class="footer-logo-text">GARAGE <br> <span>MARKETING SOLUTIONS</span></div> -->
-                    </div>
-                    <p>UK's leading digital marketing agency specializing in SEO, Google Ads, GMB optimization, and website development for auto garages, tyre shops, and towing businesses.</p>
-                    <div class="social-links">
-                        <a href="#" style="color: var(--text-white); margin-right: 15px; font-size: 1.2rem;"><i class="fab fa-facebook"></i></a>
-                        <a href="#" style="color: var(--text-white); margin-right: 15px; font-size: 1.2rem;"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" style="color: var(--text-white); margin-right: 15px; font-size: 1.2rem;"><i class="fab fa-instagram"></i></a>
-                        <a href="#" style="color: var(--text-white); font-size: 1.2rem;"><i class="fab fa-twitter"></i></a>
-                    </div>
+        <div class="footer-content">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <img src="https://i.ibb.co/NgmRX16z/logo-removebg-preview.png" alt="Garage Marketing Solutions">
                 </div>
-                
-                <div class="footer-links">
-                    <h3 class="footer-heading">Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-links">
-                    <h3 class="footer-heading">Services</h3>
-                    <ul>
-                        <li><a href="services.html#seo">SEO for Garages</a></li>
-                        <li><a href="services.html#ppc">Google Ads (PPC)</a></li>
-                        <li><a href="services.html#gmb">GMB Optimization</a></li>
-                        <li><a href="services.html#webdev">Website Development</a></li>
-                        <li><a href="services.html">All Services</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-contact">
-                    <h3 class="footer-heading">Contact Us</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> London, United Kingdom</p>
-                    <p><i class="fas fa-phone-alt"></i> 0121 285 8490</p>
-                    <p><i class="fas fa-envelope"></i> info@garagemarketingsolutions.com</p>
-                    <p><i class="fas fa-clock"></i> Mon-Fri: 9am-6pm</p>
+                <p>Helping UK garage owners get more MOT bookings, tyre replacement jobs, car servicing appointments,
+                    and so much more across the United Kingdom.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">in</a>
+                    <a href="#" class="social-icon">tw</a>
+                    <a href="#" class="social-icon">ig</a>
                 </div>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2023 Garage Marketing Solutions. All rights reserved. | <a href="privacy.html" style="color: var(--text-gray);">Privacy Policy</a> | <a href="terms.html" style="color: var(--text-gray);">Terms of Service</a></p>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#seo">SEO Services</a></li>
+                    <li><a href="#google-ads">Google Ads</a></li>
+                    <li><a href="#gmb">GMB Optimization</a></li>
+                    <li><a href="#web-dev">Web Development</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
             </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Get In Touch</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <p><strong>Phone</strong></p>
+                            <p>+44 7490302600</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <p><strong>Email</strong></p>
+                            <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                    data-cfemail="b2dbdcd4ddf2d5d3c0d3d5d7dfd3c0d9d7c6dbdcd5c1dddec7c6dbdddcc19cd1dddf">[email&#160;protected]</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Garage Marketing Solutions. All rights reserved.</p>
         </div>
     </footer>
 
+    <div class="whatsapp-float">
+        <a href="https://wa.me/447490302600" target="_blank" class="whatsapp-button">
+            <img src="https://cdn-icons-png.flaticon.com/128/3536/3536445.png" alt="WhatsApp" class="whatsapp-icon" />
+            <span>How can I help you?</span>
+        </a>
+    </div>
+
+    <div class="back-to-top" id="backToTop">↑</div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script>
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mainNav = document.getElementById('mainNav');
-        const header = document.getElementById('header');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mainNav.classList.toggle('active');
-            mobileMenuBtn.innerHTML = mainNav.classList.contains('active') 
-                ? '<i class="fas fa-times"></i>' 
-                : '<i class="fas fa-bars"></i>';
-        });
-        
-        // Close mobile menu when clicking a link
-        document.querySelectorAll('#mainNav a').forEach(link => {
-            link.addEventListener('click', () => {
-                mainNav.classList.remove('active');
-                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-            });
-        });
-        
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 100) {
+        window.addEventListener('scroll', function () {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
                 header.classList.add('scrolled');
             } else {
                 header.classList.remove('scrolled');
             }
         });
-        
-        // FAQ Accordion
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const item = question.parentElement;
-                item.classList.toggle('active');
-                
-                const toggle = question.querySelector('.faq-toggle');
-                toggle.textContent = item.classList.contains('active') ? '−' : '+';
+
+        const mobileMenu = document.getElementById('mobileMenu');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenu.addEventListener('click', function () {
+            mobileMenu.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function () {
+                mobileMenu.classList.remove('active');
+                navLinks.classList.remove('active');
             });
         });
-        
-        // Fade-in animation on scroll
-        const fadeElements = document.querySelectorAll('.fade-in');
-        
-        const fadeInOnScroll = () => {
-            fadeElements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const elementVisible = 150;
-                
-                if (elementTop < window.innerHeight - elementVisible) {
-                    element.classList.add('active');
+
+        const backToTopButton = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
                 }
             });
-        };
-        
-        // Set initial state for fade elements
-        fadeElements.forEach(element => {
-            element.classList.remove('active');
         });
-        
-        // Check on load and scroll
-        window.addEventListener('load', fadeInOnScroll);
-        window.addEventListener('scroll', fadeInOnScroll);
-        
-        // Initial check
-        fadeInOnScroll();
     </script>
 </body>
+
 </html>
